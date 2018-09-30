@@ -5,7 +5,6 @@ import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
-import org.springframework.web.reactive.function.server.RequestPredicate;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
@@ -18,6 +17,7 @@ public class UserHandler {
 
     @Autowired
     private UserRepository repository;
+
 
     public Mono<ServerResponse> findAll(ServerRequest request){
         return ServerResponse.ok().contentType(MediaType.TEXT_EVENT_STREAM)

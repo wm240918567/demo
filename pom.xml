@@ -39,23 +39,23 @@
             <version>1.2.29</version>
         </dependency>
         <!--swagger2 API文档 依赖-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.6.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>io.springfox</groupId>-->
+            <!--<artifactId>springfox-swagger2</artifactId>-->
+            <!--<version>2.6.1</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.6.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>io.springfox</groupId>-->
+            <!--<artifactId>springfox-swagger-ui</artifactId>-->
+            <!--<version>2.6.1</version>-->
+        <!--</dependency>-->
 
-        <!--有个坑，现在webflux项目中要使用swagger必须要这个依赖，应该有替代方案，还在寻找-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        <!--&lt;!&ndash;有个坑，现在webflux项目中要使用swagger必须要这个依赖，应该有替代方案，还在寻找&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-web</artifactId>-->
+        <!--</dependency>-->
 
         <!-- 支持stream的mongodb 依赖-->
         <dependency>

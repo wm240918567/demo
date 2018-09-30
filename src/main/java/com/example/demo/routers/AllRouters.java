@@ -17,16 +17,38 @@ public class AllRouters {
 
     /**
      * user路由器
+     *
      * @param handler 处理器
      * @return 路由器
      */
     @Bean
-    public RouterFunction<ServerResponse> userRouter(UserHandler handler){
+    public RouterFunction<ServerResponse> userRouter(UserHandler handler) {
 
         return RouterFunctions.nest(RequestPredicates.path("/routerUser"),
-                RouterFunctions.route(RequestPredicates.GET("/"),handler::findAll)
-        .andRoute(RequestPredicates.POST("/").
-                and(RequestPredicates.accept(MediaType.APPLICATION_JSON_UTF8)),handler::save));
-
+                RouterFunctions
+                        .route(RequestPredicates.GET("/"),
+                                handler::findAll)
+                        .andRoute(RequestPredicates.POST("/").
+                                and(RequestPredicates.accept(MediaType.APPLICATION_JSON_UTF8)), handler::save));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
