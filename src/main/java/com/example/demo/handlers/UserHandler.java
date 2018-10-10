@@ -2,6 +2,8 @@ package com.example.demo.handlers;
 
 import com.example.demo.domain.User;
 import com.example.demo.repository.UserRepository;
+import com.example.demo.target.Statistical;
+import com.example.demo.target.MyLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -18,7 +20,8 @@ public class UserHandler {
     @Autowired
     private UserRepository repository;
 
-
+    @MyLog(value = "==========================333333333333333333333333333333=========================")
+    @Statistical(name = "findAll")
     public Mono<ServerResponse> findAll(ServerRequest request){
         return ServerResponse.ok().contentType(MediaType.TEXT_EVENT_STREAM)
                 .body(repository.findAll(), User.class);

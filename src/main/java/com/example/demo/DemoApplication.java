@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.http.MediaType;
 
@@ -16,6 +17,7 @@ import java.util.List;
 /**
  * 启动类
  */
+@EnableAspectJAutoProxy
 @EnableReactiveMongoRepositories//开启流mongodb
 @SpringBootApplication(scanBasePackages = {"com.example.demo"})
 public class DemoApplication {
@@ -23,6 +25,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
+
 
 	/**
 	 * 使用注入bean方式集成json解析框架：fastjson

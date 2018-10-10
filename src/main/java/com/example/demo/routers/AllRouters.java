@@ -1,6 +1,7 @@
 package com.example.demo.routers;
 
 import com.example.demo.handlers.UserHandler;
+import com.example.demo.target.MyLog;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -21,6 +22,7 @@ public class AllRouters {
      * @param handler 处理器
      * @return 路由器
      */
+    @MyLog(value = "==========================22222222222222222222222222222=========================")
     @Bean
     public RouterFunction<ServerResponse> userRouter(UserHandler handler) {
 
