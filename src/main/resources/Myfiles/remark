@@ -1,0 +1,11 @@
+jdk 10
+spring boot 2.0.5
+aop
+fastjson
+流MongoDB
+webflux 两种风格
+devtools
+lombok
+自定义注解AOP拦截 实现
+swagger2 生成API
+testvar
