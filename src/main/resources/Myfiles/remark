@@ -1,11 +1,13 @@
-jdk 10
+jdk 11
 spring boot 2.0.5
 aop
 fastjson
 流MongoDB
 webflux 两种风格
-devtools
+devtools idea要配合插件使用，我记得eclipse可以值机依赖使用
 lombok
 自定义注解AOP拦截 实现
-swagger2 生成API
-testvar
+swagger2 生成API 这个再flux中暂时无法实现，迁移到其他项目
+新特性
+    var
+
